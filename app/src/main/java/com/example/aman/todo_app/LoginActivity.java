@@ -18,16 +18,16 @@ public class LoginActivity extends AppCompatActivity {
 //        SharedPreferences sharedPref = getSharedPreferences('@+id/username_editext',);
     }
     public void openActivity(View view){
-        @SuppressLint("WrongConstant") SharedPreferences pref=getSharedPreferences("usname",MODE_PRIVATE);
+        @SuppressLint("WrongConstant") SharedPreferences pref= getSharedPreferences("usname",MODE_PRIVATE);
         SharedPreferences.Editor editor=pref.edit();
-        EditText uname=findViewById(R.id.username_editext);
-        EditText password=findViewById(R.id.password_editext);
+        EditText uname= findViewById(R.id.username_editext);
+        EditText pass= findViewById(R.id.password_editext);
         String username=uname.getText().toString();
-        String pass=password.getText().toString();
+        String password=pass.getText().toString();
         editor.putString("android:username",username);
-        editor.putString("android:password",pass);
+        editor.putString("android:password",password);
         editor.commit();
-        Intent intent=new Intent(this,DashboardActivity.class);
+        Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
         startActivity(intent);
     }
 

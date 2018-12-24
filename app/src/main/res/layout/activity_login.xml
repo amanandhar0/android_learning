@@ -29,14 +29,17 @@
         app:layout_constraintTop_toBottomOf="@id/username_editext"/>
 
 
-    <Button
+
+
+
+    <Button android:id="@+id/login_btn"
+        android:onClick="openActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_editext"
-        />
+        app:layout_constraintTop_toBottomOf="@id/password_editext"/>
 
 
 
