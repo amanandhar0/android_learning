@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.example.aman.todo_app.AdminActivity">
 
+
+    <EditText
+        android:id="@+id/username_editext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/password_editext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_editext"/>
+
+
+
+
+
+    <Button android:id="@+id/login_btn"
+        android:onClick="openActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_editext"/>
+
 </android.support.constraint.ConstraintLayout>

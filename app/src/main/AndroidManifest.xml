@@ -23,6 +23,8 @@
         </activity>
         <activity android:name=".SplashActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity" />        //each and every files register garna parcha
+        <activity android:name=".AdminActivity"></activity>
     </application>
 
 </manifest>
