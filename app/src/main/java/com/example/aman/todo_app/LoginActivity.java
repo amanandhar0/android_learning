@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         String username = uname.getText().toString();
         String password = pass.getText().toString();
 
-        if (username.equals("faceless") && password.equals("b alanar")) {
+        if (username.equals("faceless") && password.equals("balanar")) {
 
             Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
             startActivity(intent);
@@ -46,6 +46,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (username.equals(usr) && password.equals(pss)) {
                     Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
                     startActivity(intent);
+                }else{
+
                 }
             }
 //        editor.putString("android:username",username);
