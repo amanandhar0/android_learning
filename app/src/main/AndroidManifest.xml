@@ -24,7 +24,7 @@ package="com.example.aman.todo_app">
         </intent-filter>
     </activity>
     <activity android:name=".SplashActivity"
-        android:theme="@styles/splashTheme"/>
+        android:theme="@style/splashTheme"/>
     <activity android:name=".LoginActivity" />
     <activity android:name=".DashboardActivity" />
     //each and every files register garna parcha
